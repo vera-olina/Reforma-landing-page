@@ -1,0 +1,98 @@
+/*General Styles*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* scroll-padding-top: 75px; */
+}
+
+body {
+    /* font-family: 'Raleway', sans-serif; */
+    /* overflow-x: hidden; */
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.wraper {
+    flex: 1;
+}
+/* Main */
+/* .main{} */
+/* Navbar */
+.main-nav {
+    display: flex;
+}
+.main-nav-item {
+    flex: 1;
+    position: relative;
+    /* padding-top: 24px  48px 16px; */
+}
+/* Subsection */
+.subsection {
+    /* background: url("/public/interior/0001.jpg"), lightgray 50% / cover no-repeat, #000; */
+    background: #B3B3B2;
+    background-image: url("/public/interior/0006.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 20px 0px 0px 20px;
+    padding: 24px 48px;
+}
+
+.sub-button {
+    position: absolute;
+    top: 50%;
+    right: 48px;
+}
+
+.sub-nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+}
+
+.sub-nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.sub-text {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px white;
+    width: 100%;
+}
