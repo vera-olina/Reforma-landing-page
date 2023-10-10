@@ -1,0 +1,67 @@
+/* Contact */
+.wraper-form-section {
+    position: relative;
+    margin: 48px auto;
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form_component {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+input[type=text], input[type=email], select{
+    width: 100%;
+    padding-bottom: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+input[type=checkbox] {
+    margin-right: 16px;
+}
+
+.button-send-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.button-send {
+    margin: auto;
+    padding: 8px 24px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    background: #000;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.button-send:hover {
+    transform: scale(1.1);
+}
+
+.button-send:active {
+    transform: scale(1);
+}
+
+/* Images */
+.contact-emoji {
+    position: absolute;
+    top: 8%;
+    right: 0%;
+}
+
+/* .contact-newspapper {
+    position: absolute;
+    bottom: 20%;
+} */

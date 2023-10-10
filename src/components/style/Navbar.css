@@ -1,0 +1,109 @@
+/* Navbar */
+nav {
+    z-index: 999;
+}
+
+.nav {
+    width: 100%;
+    background: white;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+}
+
+.nav-item {
+    flex: 1;
+    position: relative;
+    border-right: 1px solid rgba(0, 0, 0, 0.50);
+    border-left: 1px solid rgba(0, 0, 0, 0.50);
+    padding: 24px 16px 48px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.nav-item:first-child, .nav-item:last-child  {
+    border-left: none;
+    border-right: none;
+}
+
+.nav-item:hover{
+    border-bottom: 2px solid #000;
+}
+
+.active-home, .active-menu, .active-contact {
+    z-index: 999;
+    border-bottom: 2px solid #000;
+    font-weight: 500;
+    z-index: 999;
+}
+
+.nav-item-num {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+/* Mobile Design Elements */
+
+/*Burger Menu Pop-up*/
+
+.burger-menu {
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+    position: relative;
+    padding: 16px 10px;
+}
+
+.burger-menu button{
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.brgr-m-pop-up {
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    left: -10px;
+    top: 52px;
+    border-right: 1px solid rgba(0, 0, 0, 0.50);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+}
+
+.burger-toggle {
+    display: none;
+}
+
+.open {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.b-menu-logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+@media all and (max-width: 992px) {
+    .nav {
+        display: none;
+    }
+
+    .nav-item {
+        border: none;
+        padding: 24px 96px 48px 20px;
+    }
+
+    .nav-item:first-child, .nav-item:nth-child(2)  {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.50);
+    }
+}

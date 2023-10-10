@@ -1,0 +1,84 @@
+/*General Footer */
+
+.footer {
+    width: 100%;
+    background-color: white;
+    height: 160px;
+    padding: 16px 48px;
+    z-index: 999;
+}
+
+/* Home Footer */
+.home-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.adress-link {
+    font-weight: 300;
+    width: calc(2 / 3 * 100%);
+}
+
+/* Menu Footer */
+.menu-footer {
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.10), 0px -14px 14px 0px rgba(0, 0, 0, 0.09), 0px -32px 19px 0px rgba(0, 0, 0, 0.05), 0px -57px 23px 0px rgba(0, 0, 0, 0.01), 0px -89px 25px 0px rgba(0, 0, 0, 0.00);  
+}
+
+.footer-options, .footer-options>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.footer-subtext {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+}
+  
+@keyframes animate {
+0% {
+    background-position: -500%;
+}
+100% {
+    background-position: 500%;
+}
+}
+
+/* Contact Footer */
+.contact-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    height: 100%;
+}
+
+.cta-button{
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 8px 16px;
+    background: white;
+}
+
+@media all and (max-width: 992px) {
+    .footer {
+        padding: 16px 10px;
+        height: 100px;
+    }
+
+    .adress-link {
+        width: 100%
+    }
+}

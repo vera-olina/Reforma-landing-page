@@ -1,0 +1,78 @@
+/* Menu */
+
+.menu-full {
+    height: 70vh;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    padding: 24px 48px;
+}
+
+.menu-section{
+    position: relative;   
+}
+
+.menu-heading{
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.menu-subtext {
+    color: rgba(0, 0, 0, 0.50);
+    text-align: end;
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 16px;
+    column-gap: 48px;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+    width: 240px;
+    justify-content: space-between;
+}
+
+.item-heading {
+    font-weight: 500;
+}
+
+/* Images */
+.Happy-mug {
+    position: absolute;
+    right: 15%;
+    bottom: -20%;
+}
+
+.Sandwich {
+    position: absolute;
+    left: 25%;
+    bottom: -15%;
+}
+
+.Cupcake {
+    position: absolute;
+    right: 15%;
+    top: 35%;
+}
+
+/* Menu Animation */
+.menu-section {
+    animation: fade both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
