@@ -22,7 +22,7 @@ I designed a unique responsive interactive UI using Figma for a web application 
 
 The navigation bar includes Home, Menu, and a Contact form. The contact form was created using EmailJS, a backend-as-a-service for receiving client requests from the website and providing rapid responses. The Menu page renders menu items from a dynamic menu data object, which is customizable and offers unlimited options for its purpose.
 
-The project's uniqueness extends to complimentary illustrations generated with AI by [Midjourney](https://www.midjourney.com/home).
+The project stands out with unique illustrations generated with AI by [Midjourney](https://www.midjourney.com/home).
 
 ## Technologies
 This project was scaffoldede with [Vite plugin](https://vitejs.dev) for React and utilizes the backend-as-a-service [EmailJS](https://www.emailjs.com/).
