@@ -5,6 +5,7 @@ import "./components/style/Home.css"
 import "./components/style/Navbar.css"
 import "./components/style/Contact.css"
 import "./components/style/Footer.css"
+import "./components/style/Hoffman.css"
 import Content from "./components/Content"
 import Subsection from "./components/Subsection"
 

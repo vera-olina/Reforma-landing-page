@@ -30,6 +30,16 @@ input[type=checkbox] {
     margin-right: 16px;
 }
 
+textarea {
+    box-sizing: border-box;
+    resize: none;
+    height: 80px;
+    padding: 0 2px;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .button-send-container {
     display: flex;
     justify-content: center;
@@ -63,5 +73,11 @@ input[type=checkbox] {
 
 /* .contact-newspapper {
     position: absolute;
-    bottom: 20%;
+    bottom: -25%;
 } */
+
+@media all and (max-width: 576px) {
+    .wraper-form-section{
+        padding: 0 10px;
+    }
+}

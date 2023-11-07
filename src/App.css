@@ -48,6 +48,7 @@ button {
 
 .wraper {
     flex: 1;
+    max-height: 100vh;
 }
 
 .sub-heading {
@@ -74,4 +75,8 @@ button {
     }
 }
 
-/* @media all and (max-width: 768px) {} */
+@media all and (max-width: 768px) {
+    .hide-mobile-sm {
+        display: none;
+    }
+}

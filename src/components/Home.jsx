@@ -1,4 +1,13 @@
+import React, { useState } from "react";
+import Hoffman from "./Hoffman"
+
 export default function Home(){
+    const [popup, setPop] = React.useState(false)
+
+    function toggleHoffman() {
+        setPop(!popup)
+    }
+
     return (
         <section className="wraper-main">
             <header className="main-header">
@@ -9,7 +18,10 @@ export default function Home(){
                     <span className="main-heading_margin">an independent</span>
                     coffee shop
                 </h1>
-                <img className="hide-mobile" src="../public/icon/coffee-mug.png" height="136"/>
+                <button className="secret-button hide-mobile-sm" onClick={toggleHoffman}>
+                    <img src="../public/icon/coffee-mug.png" height="136"/>
+                </button>
+                {popup ? <Hoffman /> : ""}
             </header>
             <main className="main-content">
                 <div className="description">

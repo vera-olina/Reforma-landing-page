@@ -1,0 +1,96 @@
+.wraper-hoffman {
+    z-index: 999;
+    position: absolute;
+    top: 25%;
+    right: 25%;
+
+    border-radius: 10px;
+    padding: 8px 16px;
+    background: white;
+    width: 50%;
+    height: 50vh;
+    overflow: scroll;
+
+    box-shadow: 0px 5px 11px 0px rgba(0, 0, 0, 0.10), 0px 20px 20px 0px rgba(0, 0, 0, 0.09), 0px 45px 27px 0px rgba(0, 0, 0, 0.05), 0px 80px 32px 0px rgba(0, 0, 0, 0.01), 0px 125px 35px 0px rgba(0, 0, 0, 0.00);
+}
+
+.hoffman-header{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding-top: 8px;
+}
+
+.hoffman-main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 0;
+}
+
+.breakdown-list li{
+    display: flex;
+    padding-bottom: 4px;
+}
+
+.breakdown-list li:last-child {
+    padding-bottom: 0;
+}
+
+.breakdown {
+    display: block;
+    background-color: rgb(var(--neutral100-rgb,250,250,250));
+    border: 1px solid rgb(var(--neutral300-rgb,224,224,224));
+    border-radius: 4px;
+    width: 44px;
+    height: 22px;
+    text-align: center;
+}
+
+.range, .liquid-range {
+    width: 120px;
+}
+
+.liquid-range {
+    background-color: rgb(var(--neutral100-rgb,250,250,250));
+    border: 1px solid rgb(var(--neutral300-rgb,224,224,224));
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 4px 0;
+}
+
+.field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sliderValue {
+    position: relative;
+    width: 100%;
+}
+
+.sliderValue span{
+    position: absolute;
+    content: "";
+    transform: translateY(-10%);
+    right: -30%;
+    top: 50%;
+}
+
+.note{
+    color: rgba(0, 0, 0, 0.50);
+    font-weight: 300;
+}
+
+.note-link {
+    text-decoration: underline;
+}
+
+@media all and (max-width: 768px) {
+    .wraper-hoffman {
+        right: 35%;
+        width: 70%;
+    }
+}

@@ -24,7 +24,7 @@ export default function Content() {
     }
 
     return (
-        <div className="wraper content">
+        <div className="wraper">
             <Navbar 
                 setActivePage = {setActivePage}
                 activePage={activePage}
