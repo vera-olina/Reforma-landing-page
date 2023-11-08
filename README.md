@@ -44,5 +44,5 @@ If you encounter any issues or would like to submit an improvement to this proje
 I'm actively working on resolving these issues, so please stay tuned for updates!
 
 ## Other Information
-The project is also available online! You can [check it out here]() and have fun!
+The project is also available online! You can [check it out here](https://euphonious-cocada-cbb9ef.netlify.app/) and have fun!
 
