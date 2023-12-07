@@ -19,13 +19,13 @@ export default function Home(){
                     coffee shop
                 </h1>
                 <button className="secret-button hide-mobile-sm" onClick={toggleHoffman}>
-                    <img src="../public/icon/coffee-mug.png" height="136"/>
+                    <img src="/icon/coffee-mug.png" height="136"/>
                 </button>
                 {popup ? <Hoffman /> : ""}
             </header>
             <main className="main-content">
                 <div className="description">
-                    <img src="../public/icon/rabbit.png" width="72"/>
+                    <img src="/icon/rabbit.png" width="72"/>
                     <p className="description-text">Reforma is Ukraine's premier independent coffee shop, 
                         founded by <a className="description-link">Polina Olina and Vadim Hrytsenko.</a>  
                         &nbsp; We're more than just a coffee place; we're a cultural 
@@ -45,7 +45,7 @@ export default function Home(){
                         </div>
                     </div>
                     <figure className="event-figure">
-                        <img src="../public/icon/dog.png" width="72" />
+                        <img src="/icon/dog.png" width="72" />
                         <figcaption className="description-text">We are pet friendly!</figcaption>
                     </figure> 
                 </div>

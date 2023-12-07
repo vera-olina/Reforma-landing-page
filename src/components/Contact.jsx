@@ -13,7 +13,13 @@ export default function Contact() {
     const sendEmail = (e) => {
       e.preventDefault()
   
-      emailjs.sendForm('service_3gs9ux8', 'template_aayic98', form.current, 'gpYnz7CxtDCimP3dq')
+      emailjs.sendForm(
+        'service_3gs9ux8',
+        'template_aayic98',
+        form.current,
+        // 'gpYnz7CxtDCimP3dq'
+        process.env.REACT_APP_EMAILJS_USER_ID
+        )
         .then((result) => {
             console.log("Email sent successfully!", result.text)
             alert("Email sent successfully!")
@@ -26,7 +32,7 @@ export default function Contact() {
 
     return (
         <section className="wraper-form-section">
-            <img className="contact-emoji" src="../public/icon/emoji.png" width="72"/>
+            <img className="contact-emoji" src="/icon/emoji.png" width="72"/>
             <p>Fill out the form and we'll get in touch with you shortly.</p>
 
             <form ref={form} onSubmit={sendEmail}>
@@ -77,7 +83,7 @@ export default function Contact() {
 
             </form>
 
-            {/* <img className="contact-newspapper" src="../public/icon/newspaper.png" width="116"/> */}
+            {/* <img className="contact-newspapper" src="/icon/newspaper.png" width="116"/> */}
             <p>Or contact us directly.</p>
         </section>
     )

@@ -15,7 +15,7 @@ export default function Subsection() {
     ]
 
     const backgroundImageStyle ={
-        backgroundImage: `url(/public/interior/${images[currentImage]})`,
+        backgroundImage: `url(/interior/${images[currentImage]})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat"
     }
@@ -28,14 +28,14 @@ export default function Subsection() {
     return(
         <section className="wraper subsection" style={backgroundImageStyle}>
             <nav className="sub-nav ">
-                <a className="sub-nav-item" href="https://www.tiktok.com/@reformacoffee?_t=8g2jcBmNs9O" target="_blank" rel="noopener noreferrer"><img src="../public/TikTok.svg" /></a>
-                <a className="sub-nav-item" href="https://www.instagram.com/reformacoffee/" target="_blank" rel="noopener noreferrer"><img src="../public/Instagram.svg" /></a>
+                <a className="sub-nav-item" href="https://www.tiktok.com/@reformacoffee?_t=8g2jcBmNs9O" target="_blank" rel="noopener noreferrer"><img src="/TikTok.svg" /></a>
+                <a className="sub-nav-item" href="https://www.instagram.com/reformacoffee/" target="_blank" rel="noopener noreferrer"><img src="/Instagram.svg" /></a>
                 {/* <a className="sub-nav-toggl">UA</a>
                 <span className="sub-nav-span">/</span>
                 <a className="sub-nav-toggl toggl-active">EN</a> */}
-                <img src="../public/Reforma-white.svg" alt="Logo" height="24"/>
+                <img src="/Reforma-white.svg" alt="Logo" height="24"/>
             </nav>
-            <button className="sub-button" onClick={changeImage}><img src="../public/button-arrow.svg" height="32"/></button>
+            <button className="sub-button" onClick={changeImage}><img src="/button-arrow.svg" height="32"/></button>
             <footer className="sub-footer">
                 <div className="sub-text">
                     <p>Independent Coffee Shop.</p>

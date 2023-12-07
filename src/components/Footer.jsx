@@ -28,15 +28,15 @@ export default function Footer(props){
                     <p className="footer-subtext">scroll</p>
                     <div className="footer-options">
                         <div>
-                            <img src="../public/icon/milk.svg" />
+                            <img src="/icon/milk.svg" />
                             <p>Milk +5</p>
                         </div>
                         <div>
-                            <img src="../public/icon/plant.svg" />
+                            <img src="/icon/plant.svg" />
                             <p>Plant-Based Milk +10</p>
                         </div>
                         <div>
-                            <img src="../public/icon/syrup.svg" />
+                            <img src="/icon/syrup.svg" />
                             <p>Syrup +5</p>
                         </div>
                     </div>

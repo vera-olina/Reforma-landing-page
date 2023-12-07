@@ -69,7 +69,7 @@
 }
 
 .description-link:hover:after {
-    content: url(../public/owners.svg);
+    content: url(/owners.svg);
     display: block;
     position: absolute;
 }

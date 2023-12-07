@@ -33,7 +33,7 @@ export default function Menu() {
                         )
                     })}
                 </ul>
-                <img className={menuImg} src={`../public/icon/${menuImg}.png`} alt={menuImg} width="94"/>
+                <img className={menuImg} src={`/icon/${menuImg}.png`} alt={menuImg} width="94"/>
             </section>
         )
     }

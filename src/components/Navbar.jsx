@@ -31,31 +31,28 @@ export default function Navbar(props){
                 <ol className={`brgr-m-pop-up ${isOpen ? "open" : ""}`}>
                     <li onClick={() => props.setActivePage("home")}
                         className={`nav-item 
-                        ${props.activePage === "home" && "active-home"}`}
+                        ${props.activePage === "home" ? "active-home" : ""}`}
                     >
-                        <a>Home
+                        Home
                         <span className="nav-item-num">01</span>
-                        </a>
                     </li>
                     <li onClick={() => props.setActivePage("menu")}
                         className={`nav-item 
-                        ${props.activePage === "menu" && "active-menu"}`}
+                        ${props.activePage === "menu" ? "active-menu" : ""}`}
                     >
-                        <a>Menu
+                        Menu
                         <span className="nav-item-num">02</span>
-                        </a>
                     </li>
                     <li onClick={() => props.setActivePage("contact")}
                         className={`nav-item 
-                        ${props.activePage === "contact" && "active-contact"}`}
+                        ${props.activePage === "contact" ? "active-contact" : ""}`}
                     >
-                        <a>Contact
+                        Contact
                         <span className="nav-item-num">03</span>
-                        </a>
                     </li>
                 </ol>
                 
-                <img className="b-menu-logo" src="../public/Reforma-black.svg" alt="Logo" height="80"/>
+                <img className="b-menu-logo" src="/Reforma-black.svg" alt="Logo" height="80"/>
             </div>
             {/* Desktop */}
             <ol className="nav" >
